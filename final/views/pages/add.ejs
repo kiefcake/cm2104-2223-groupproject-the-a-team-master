@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <%- include('../partials/trendingHead')%>
+</header>
+
+
+<body class="base">
+    <header>
+      <%- include('../partials/header') %>
+    </header>
+
+  <main>
+    <div class="CenterB">
+
+      <!-- form with entry box for each bit of inomfrtaion we want from our user. -->
+
+      <!-- submits to our /adduser route. -->
+      <form action="/adduser" method="POST">
+        <div class="container">
+
+          <h1>Register</h1>
+
+
+
+<p>Please fill in this form to create an account.</p>     <br> 
+<hr>
+<label for="Name"><b>Name</b></label>                                          <br> 
+<input type="text" placeholder="Title" name="title" class="Rag"  required >    <br> 
+
+<input type="text" placeholder="First Name" name="first" class="Rag" required> 
+<input type="text" placeholder="Last Name" name="last" class="Rag" required>   <br> 
+
+<input type="text" placeholder="Gender" name="gender" class="Rag" required>    
+<input type="text" placeholder="Nationality" name="nat"   class="Rag" required><br>
+
+
+<label for="birthday"><b>Birthday</b></label>                                  <br> 
+<input type="datetime" placeholder="Date Of Birth"    name="dob" class="Rag" required>         <br> 
+
+<label for="email"><b>Email</b></label> <br> 
+<input type="email" placeholder="me@example.com" name="email" class="Rag" required>     <br> 
+
+
+<label for="psw"><b>Username & Password</b></label>                                 <br> 
+<input type="text" placeholder="Username"     name="username" class="Rag" required>  
+<input type="password" placeholder="Password" name="password" class="Rag" required> <br>
+
+
+<label for="Address"><b>Address</b></label>                                   <br>     
+<input type="text" placeholder="Street"   name="street" class="Rag" required>
+<input type="text" placeholder="City"     name="city" class="Rag" required>
+<input type="text" placeholder="State"    name="state" class="Rag" required>
+<input type="text" placeholder="Postcode" name="postcode" class="Rag" required>
+
+
+
+  
+
+<hr>
+
+<button type="submit" class="registerbtn">Register</button> <br>
+<br>
+<p>Already have an account? <a href="/login">Sign in</a>.</p>
+        </div>
+        
+
+      </form>
+
+ <div class="bottom-container">
+  
+</body>
+
+</html>

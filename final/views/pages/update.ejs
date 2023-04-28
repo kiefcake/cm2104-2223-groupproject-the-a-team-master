@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<header>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <%- include('../partials/trendingHead')%>
+</header>
+
+
+<body class="base">
+    <header>
+      <%- include('../partials/header') %>
+    </header>
+
+  <main>
+    <div class="CenterB">
+
+      <!-- form with entry box for each bit of inomfrtaion we want from our user. -->
+
+      <!-- submits to our /adduser route. -->
+      <form action="/upass" method="POST">
+        <div class="container">
+
+          <h1>Update Password</h1>
+
+
+
+
+
+
+
+<label for="psw"><b>Add new Password</b></label>                                 <br> 
+<input type="text" placeholder="Username"     name="username" class="Rag" required> <br>
+<input type="password" placeholder="Old Password" name="oldpassword" class="Rag" required> <br>
+<input type="password" placeholder="Password" name="password" class="Rag" required> <br>
+
+
+
+
+
+
+  
+
+<hr>
+
+<button type="submit" class="registerbtn">Update password</button> <br>
+
+
+        </div>
+        
+
+      </form>
+
+ <div class="bottom-container">
+  
+ 
+
+</body>
+
+</html>

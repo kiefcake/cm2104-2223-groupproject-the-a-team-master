@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>SMovie</title>
+  <link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="js/trending.js"></script>
+  <link rel="stylesheet" href="css/trend.css">
+	<!-- these scripts are meant to be ran individually just uncomment the one you want to investigate.
+They are in order of progression-->
+
+	
+	
+</head>
+
+<body id="base">
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>                        
+			</button>
+			<a class="navbar-brand" href="#">SMovie</a>
+		  </div>
+		  <div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+			  <li><a href="index2.html"> Upcoming</a></li>
+              <li class="active"><a href="Trending.html">Trending  </a></li>
+			  <li><a href="index.html">SMovie Search</a></li>
+			  <li><a href="#">Projects</a></li>
+			  <li><a href="#">Contact</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+			  <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+
+
+
+
+		<section class="trelease">
+
+       
+			<h1 class="headers">Trending Movies Today</h1> 
+ 
+			<p id="amount"></p>
+            <div class="Search">
+			<form id="tgetfotm">
+                
+				<input type="text" id="tpageNum">
+				<input type="submit" value="Submit">
+            </div>
+			</form>
+	
+		<div id="trending"></div>
+
+		
+	
+	  	
+
+		</section>
+
+
+
+  
+	
+</body>
+
+</html>

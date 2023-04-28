@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <%- include('../partials/trendingHead')%>
+  
+</head>
+
+
+<body class="sBase" >
+
+
+
+
+
+
+
+
+  
+    <header>
+      <%- include('../partials/header')%>
+    </header>
+
+  <main>
+    <div class="CenterB">
+      <div class="container" >
+
+
+
+
+      <!-- simple login form, submits to our /dologin route -->    
+        <form action="/dologin" method="POST">
+          <div class="row">
+            <h2 style="text-align:center">Login </h2>
+
+      
+
+            <div class="col">
+              <div class="hide-md-lg">
+                <p>Or sign in manually:</p>
+              </div>
+      
+              <input  type="text" name="username" placeholder="Username" class="First" required>
+              <input type="password" name="password" placeholder="Password" class="First" required>
+              <input type="submit" value="Login">
+              <br>
+              <div class="col" id="done">
+                <a href="/update" style="color:black" class="btn">Change password</a>
+              </div>
+            </div>
+            
+          </div>
+        </form>
+      </div>
+      
+      <div class="bottom-container">
+        <div class="row">
+
+
+       <form action="/add">
+        <button type="submit"  style="margin: top 10px;"> Sign up</button>
+          </form>
+
+
+         
+        </div>
+      </div>
+
+
+          
+      
+
+
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+ 
+
+</div>
+    </div>
+  </main>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+</body>
+
+</html>
