@@ -282,11 +282,16 @@ app.post('/dologin', function(req, res) {
   });
 
 
-// handle POST request to /logout
-app.post('/logout', function(req, res) {
-  // destroy session and redirect to login page
-  req.session.destroy();
-  res.redirect('/login');
+// logout page
+app.get('/logout', function(req, res) {
+  if (!req.session.loggedin) { // if user is not logged in, redirect to login page
+    res.redirect('/login');
+    return;
+  }
+  
+  req.session.loggedin = false; // mark user as logged out
+  req.session.destroy(); // destroy session data
+  res.render('pages/logout'); // render logout page
 });
 
   
