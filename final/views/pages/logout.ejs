@@ -1,36 +1,12 @@
-<main>
-    <% if (message) { %>
-      <div class="message"><%= message %></div>
-    <% } %>
-    <div class="CenterB">
-      <div class="container" >
-        <% if (user) { %>
-          <div class="message">You have been logged out.</div>
-        <% } %>
-        <form action="/dologin" method="POST">
-          <div class="row">
-            <h2 style="text-align:center">Login </h2>
-            <div class="col">
-              <div class="hide-md-lg">
-                <p>Or sign in manually:</p>
-              </div>
-              <input  type="text" name="username" placeholder="Username" class="First" required>
-              <input type="password" name="password" placeholder="Password" class="First" required>
-              <input type="submit" value="Login">
-              <br>
-              <div class="col" id="done">
-                <a href="/update" style="color:black" class="btn">Change password</a>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="bottom-container">
-        <div class="row">
-          <form action="/signup">
-            <button type="submit" style="margin: top 10px;"> Sign up</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </main>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Logout</title>
+</head>
+<body>
+  <h1>Are you sure you want to logout?</h1>
+  <form action="/logout" method="POST">
+    <input type="submit" value="Logout">
+  </form>
+</body>
+</html>

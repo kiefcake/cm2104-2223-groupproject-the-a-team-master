@@ -128,19 +128,6 @@ app.get('/profile', function(req, res) {
 //********** POST ROUTES - Deal with processing data from forms ***************************
 
 
-//////////////////////////////////////////////////////////
-app.post('/logout', (req, res) => {
-  req.session.destroy((err) => {
-    if (err) {
-      console.log(err);
-    } else {
-      res.redirect('/login');
-    }
-  });
-});
-
-///////////////////////////////////////////////////////////
-
 
 //adding a favourite cinema
 app.post('/upass', function(req,res){
@@ -294,7 +281,13 @@ app.post('/dologin', function(req, res) {
     });
   });
 
-
+  
+// handle POST request to /logout
+app.post('/logout', function(req, res) {
+  // destroy session and redirect to login page
+  req.session.destroy();
+  res.redirect('/login');
+});
  
   
 
