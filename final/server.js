@@ -281,13 +281,13 @@ app.post('/dologin', function(req, res) {
     });
   });
 
-  
+
 // handle POST request to /logout
 app.post('/logout', function(req, res) {
   // destroy session and redirect to login page
   req.session.destroy();
   res.redirect('/login');
 });
- 
+  
   
 
